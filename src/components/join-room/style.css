@@ -1,0 +1,38 @@
+.join-room-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-field-section {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.paste-btn {
+  width: 40px;
+  background-color: green;
+  /* padding: 5px; */
+  line-height: 0;
+}
+
+.paste-btn:hover {
+  background-color: green;
+}
+
+.paste-icon {
+  color: white;
+  font-weight: 700;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.join-room-btn {
+  background-color: #512da8 !important;
+}
+
+.join-room-btn:hover {
+  background-color: #2d1369;
+}

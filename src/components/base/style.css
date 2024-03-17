@@ -1,0 +1,40 @@
+.main-container {
+  height: 100svh;
+  width: 100svw;
+  overflow-x: hidden;
+}
+
+.page-container {
+  height: calc(100% - 60px);
+  padding: 10px 70px;
+  padding-bottom: 30px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.page-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.page-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.page-container::-webkit-scrollbar-thumb {
+  background: #512da8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.page-container::-webkit-scrollbar-thumb:hover {
+  background: #260e5f;
+}
+
+@media screen and (max-width: 700px) {
+  .page-container {
+    padding: 10px 30px;
+  }
+}

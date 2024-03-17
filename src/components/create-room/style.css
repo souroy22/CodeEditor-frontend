@@ -1,0 +1,14 @@
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* padding: 20px; */
+}
+
+.create-room-form-btn {
+  background-color: #512da8 !important;
+}
+
+.create-room-form-btn:hover {
+  background-color: #2d1369;
+}

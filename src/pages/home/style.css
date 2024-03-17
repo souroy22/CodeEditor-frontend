@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+.home-container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 80svh; */
+}
+
+.home-left-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-title {
+  font-size: 55px;
+  font-weight: 900;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+
+.header-description {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+}
+
+.create-room-btn {
+  width: 150px;
+  background-color: #512da8 !important;
+  position: initial;
+}
+
+.home-right-section {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-image {
+  width: 70%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mid-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.mid-title {
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  text-align: center;
+}
+
+.mid-description {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+  text-align: center;
+}
+
+.card-section {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-container {
+    padding-top: 0;
+  }
+
+  .mid-section {
+    margin-top: 0;
+  }
+
+  .header-title {
+    font-size: 50px;
+  }
+
+  .card-section {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-left-section {
+    width: 48%;
+  }
+
+  .home-right-section {
+    width: 48%;
+  }
+
+  .header-title {
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  .header-description {
+    font-size: 13px;
+  }
+
+  .header-image {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home-left-section {
+    width: 100%;
+  }
+
+  .top-section {
+    justify-content: flex-start;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .header-title {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .header-description {
+    text-align: center;
+  }
+
+  .home-right-section {
+    width: 100%;
+  }
+
+  .header-image {
+    width: 95%;
+    height: 280px;
+  }
+
+  .mid-section {
+    width: 100%;
+  }
+
+  .mid-title {
+    font-size: 32px;
+  }
+
+  .mid-description {
+    width: 100%;
+  }
+
+  .create-room-btn {
+    margin: 0 auto;
+  }
+}

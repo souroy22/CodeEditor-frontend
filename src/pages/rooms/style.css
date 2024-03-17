@@ -1,0 +1,9 @@
+.rooms-section {
+  padding-top: 30px;
+  display: flex;
+  gap: 20px;
+  row-gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: all 1s ease-in-out;
+}

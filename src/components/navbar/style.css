@@ -1,0 +1,148 @@
+.navbar-container {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background: transparent;
+}
+.navbar {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 70px;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  flex-wrap: wrap;
+  position: fixed;
+}
+
+.navbar-left {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 47px;
+  height: 47px;
+  object-fit: contain;
+}
+
+.logo-name {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: -5px;
+  color: #512da8;
+}
+
+.navbar-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-options {
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #512da8;
+}
+
+.hamb-menu-icon {
+  display: none;
+}
+
+.navbar-avatar {
+  background-color: #512da8 !important;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.side-options {
+  position: absolute;
+  top: 0px;
+  width: 0;
+  height: 100lvh;
+  background: #fff;
+  flex-direction: column;
+  transition: all 300ms linear;
+  left: -200px;
+  z-index: 100000;
+}
+
+.sidebar-option {
+  font-weight: 800;
+  width: 100%;
+}
+
+.close-section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+}
+
+.close-icon {
+  font-size: 30px;
+}
+
+.active {
+  display: flex;
+  left: 0;
+  width: 80%;
+  box-shadow: 0 0 10px gray;
+}
+
+.navigation-menu-section {
+  display: none;
+}
+
+.custom-backdrop {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100svh;
+  background-color: #fff;
+  color: black;
+  width: 70svw;
+  z-index: 9999999;
+}
+
+@media screen and (max-width: 700px) {
+  .navigation-menu-section {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 0 30px;
+  }
+  .navbar-left {
+    width: 82%;
+    justify-content: center;
+  }
+  .navbar-options {
+    display: none;
+  }
+
+  .hamb-menu-icon {
+    display: inline-block;
+    font-size: 23px;
+  }
+
+  .navbar-avatar {
+    width: 33px;
+    height: 33px;
+    font-size: 15px;
+  }
+}
